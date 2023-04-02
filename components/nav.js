@@ -10,12 +10,12 @@ export default function Navbar(){
     ]
     const navSections = sections.map((i)=> <Section key={i.name} name={i.name} url={i.url}/>)
     return(
-        <nav className="flex justify-between theme-ukraine:bg-primary-ukraine bg-primary text-white theme-ukraine:text-background-ukraine text-xl pt-5 px-10 select-none font-[Ubuntu]">
-            <div className="flex flex-row relative items-center gap-8">
+        <nav className="flex flex-col md:flex-row justify-center md:justify-between theme-ukraine:bg-primary-ukraine bg-primary text-white theme-ukraine:text-background-ukraine text-xl pt-5 px-10 select-none font-[Ubuntu]">
+            <div className="flex flex-row md:justify-start justify-center items-center gap-8">
                 <Logo color="white" className="w-[7.5%]"/>
                 <p>Frog and Cat, LLC.</p>
             </div>
-            <nav className="flex justify-end gap-10">
+            <nav className="flex justify-center md:justify-end gap-10">
                 {navSections}
             </nav>
         </nav>

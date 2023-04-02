@@ -32,7 +32,7 @@ export default function Home() {
             <Hero/>
             <main className="flex flex-col gap-7 text-primary theme-ukraine:text-primary-ukraine font-[Ubuntu] my-[2%] mx-auto w-[60%]">
                 <h1 className="text-2xl  font-[450]">Featured Projects</h1>
-                <section className="flex flex-row gap-8">
+                <section className="flex flex-col md:flex-row gap-8">
                     <Feature title="War Economy"
                              img={warEconomy}
                              url="/games/war-economy"
@@ -58,7 +58,7 @@ export default function Home() {
 
             <footer className="flex flex-col w-[100%] gap-5">
                     <div className="mx-auto w-[60%] h-[2px] bg-darker/[25%] theme-ukraine:bg-primary-ukraine/[25%]"></div>
-                <p className="text-right text-xs text-darker theme-ukraine:text-primary-ukraine w-[80%]"><button onClick={ukraineMode}><Image className="w-[50px] mix-blend-multiply" src={ukraine} alt="ukraine"/></button> © 2023, Frog and Cat, LLC.</p>
+                <p className="md:text-right text-center text-xs text-darker theme-ukraine:text-primary-ukraine w-[80%]"><button onClick={ukraineMode}><Image className="w-[50px] mix-blend-multiply" src={ukraine} alt="ukraine"/></button> © 2023, Frog and Cat, LLC.</p>
                 </footer>
         </>
     )

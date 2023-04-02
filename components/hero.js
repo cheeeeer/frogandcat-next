@@ -4,7 +4,7 @@ export default function Hero(){
     return(
         <header className="bg-primary theme-ukraine:bg-primary-ukraine h-[280px] w-[100%] text-left">
             <div className="flex justify-center w-[100%] absolute">
-                <Logo color="white" className="w-[11%]"></Logo>
+                <Logo color="white" className="w-[50%] opacity-40 md:opacity-100 md:w-[11%]"></Logo>
             </div>
             <div className="flex flex-col gap-7 text-white theme-ukraine:text-background-ukraine font-[Ubuntu] pt-[5%] pl-[20%]">
                 <h1 className="text-2xl  font-[450]">

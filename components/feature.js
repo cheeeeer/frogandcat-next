@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Feature({ title, body, img, url }){
     return(
-        <section className="flex flex-col justify-center gap-5 max-w-[23%] select-none ">
+        <section className="flex flex-col justify-center gap-5 max-w-[90%] md:max-w-[23%] select-none ">
             <Link href={url} className="px-2 text-lg text-darker theme-ukraine:text-primary-ukraine font-[500]">{title}</Link>
             <Link href={url}><Image src={img} alt={title}/></Link>
             <div className="flex flex-col text-stretch grow">
